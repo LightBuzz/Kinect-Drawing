@@ -7,7 +7,6 @@ This short demo project will show you the following:
 * How to draw the trail of the hand on top of a XAML canvas.
 
 ## Prerequisites
-Kinect version 2
 * [Kinect for Windows v2 sensor](http://amzn.to/1DQtBSV) or [Kinect for XBOX sensor](http://amzn.to/1AvdswC) with an [adapter](http://amzn.to/1wPJG55)
 * [Kinect for Windows SDK v2](http://www.microsoft.com/en-us/download/details.aspx?id=44561)
 * Visual Studio 2013 or higher
