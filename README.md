@@ -27,7 +27,7 @@ Simply download the project and hit "Start" using Visual Studio. This project is
 			</Polyline>
 		</Canvas>
 
-## Drawing in C#
+## Drawing
 
 		Joint handRight = body.Joints[JointType.HandRight];
 
