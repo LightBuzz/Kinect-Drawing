@@ -19,12 +19,7 @@ Simply download the project and hit "Start" using Visual Studio. This project is
 
 		<Image Name="camera" />
 		<Canvas Name="canvas">
-			<local:DrawingBrush x:Name="brush" Width="300" Height="300" />
-			<Polyline Name="trail" Stroke="Red" StrokeThickness="15">
-				<Polyline.Effect>
-					<BlurEffect Radius="20" />
-				</Polyline.Effect>
-			</Polyline>
+			<Polyline Name="trail" Stroke="Red" StrokeThickness="15" />
 		</Canvas>
 
 ## Drawing
