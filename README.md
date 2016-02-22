@@ -5,7 +5,7 @@ This short demo project will show you the following:
 * How to track a hand using Kinect version 2.
 * How to display the camera stream.
 * How to draw the trail of the hand on top of a XAML canvas.
-* 
+
 ## Video
 [Watch on YouTube](https://youtu.be/8fTNLHeUXQg)
 
