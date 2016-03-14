@@ -9,6 +9,9 @@ This short demo project will show you the following:
 ## Video
 [Watch on YouTube](https://youtu.be/8fTNLHeUXQg)
 
+## Tutorial
+[Read the tutorial in blog](http://pterneas.com/?p=2244&preview=true)
+
 ## Prerequisites
 * [Kinect for Windows v2 sensor](http://amzn.to/1DQtBSV) or [Kinect for XBOX sensor](http://amzn.to/1AvdswC) with an [adapter](http://amzn.to/1wPJG55)
 * [Kinect for Windows SDK v2](http://www.microsoft.com/en-us/download/details.aspx?id=44561)
@@ -44,7 +47,7 @@ Simply download the project and hit "Start" using Visual Studio. This project is
 		}
 
 ## Contributors
-* [Vangos Pterneas](http://pterneas.com) from [LightBuzz](http://lightbuzz.com)
+* [Vangos Pterneas](http://pterneas.com) from [LightBuzz](http://lightbuzz.com) - Microsoft Kinect MVP
 
 ## License
 You are free to use this source code in personal and commercial projects. Licensed under the [MIT License](https://github.com/LightBuzz/Kinect-Drawing/blob/master/LICENSE).
