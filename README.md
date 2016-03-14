@@ -10,7 +10,7 @@ This short demo project will show you the following:
 [Watch on YouTube](https://youtu.be/8fTNLHeUXQg)
 
 ## Tutorial
-[Read the tutorial in blog](http://pterneas.com/?p=2244&preview=true)
+[Read a step-by-step tutorial](http://pterneas.com/?p=2244&preview=true)
 
 ## Prerequisites
 * [Kinect for Windows v2 sensor](http://amzn.to/1DQtBSV) or [Kinect for XBOX sensor](http://amzn.to/1AvdswC) with an [adapter](http://amzn.to/1wPJG55)
