@@ -55,6 +55,15 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="new_user.xaml.cs">
+      <DependentUpon>new_user.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="old_user.xaml.cs">
+      <DependentUpon>old_user.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Kinect_Draw.xaml.cs">
+      <DependentUpon>Kinect_Draw.xaml</DependentUpon>
+    </Compile>
     <Page Include="DrawingBrush.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -74,6 +83,18 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="new_user.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="old_user.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Kinect_Draw.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs">
