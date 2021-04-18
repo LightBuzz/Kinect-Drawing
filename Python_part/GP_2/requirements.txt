@@ -1,0 +1,6 @@
+numpy==1.19.2
+opencv_python==4.4.0.44
+scikit_image==0.16.2
+Pillow==8.1.0
+scikit_learn==0.22.2.post1 
+scikit-image==0.16.2
