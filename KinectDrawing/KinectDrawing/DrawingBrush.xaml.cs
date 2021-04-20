@@ -17,7 +17,7 @@ namespace KinectDrawing
 {
     /// <summary>
     /// Interaction logic for DrawingBrush.xaml
-    /// </summary>
+    //// </summary>
     public partial class DrawingBrush : UserControl
     {
         public DrawingBrush()
