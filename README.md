@@ -9,7 +9,7 @@ This short demo project will show you the following:
 ## Video
 [Watch on YouTube](https://youtu.be/8fTNLHeUXQg)
 
-## Tutorial
+## Tutorial_  
 [Read a step-by-step tutorial](http://pterneas.com/?p=2244&preview=true)
 
 ## Prerequisites
