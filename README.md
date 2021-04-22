@@ -1,4 +1,4 @@
-# Kinect Drawing
+# Kinect  Drawing
 A simple drawing app using Kinect, C#, and XAML.
 
 This short demo project will show you the following:
