@@ -1,5 +1,4 @@
-
-# -------------------------------------------------------
+#-------------------------------------------------------
 # Obtain coords
 import math
 import random
@@ -13,12 +12,15 @@ from sklearn import svm
 from sklearn.metrics import classification_report,accuracy_score
 import pickle
 import sys
+import os
+import pathlib
+
+folder_path =  str(pathlib.Path().absolute())
 
 
 #Obtain the path of the text file using OS argv
-data_path = sys.argv[1]
-#data_path = "1_1.txt"
-
+#data_path = sys.argv[1]
+data_path = os.path.join(folder_path, "1_1.txt")
 
 #print("111")
 #Preprocessing and obtain the data coord from the txt file
@@ -139,7 +141,7 @@ final_img_path = 'padded_cropped_shrinked_img.png'
 # x = x.astype('float32')
 # # normalizing the data to help with the training
 # x /= 255
-
+ 
 # -------------------------------------------------------
 # Prediction
 
@@ -170,8 +172,8 @@ def preprocess(img_path): #input an image
 
 
 
-filename = 'C:\\Users\khale\\OneDrive\\Desktop\\GP_2\\finalized_model.pkl'
 
+filename = os.path.join(folder_path, 'finalized_model.pkl')
 loaded_model = pickle.load(open(filename, 'rb'))
 #print("888")
 print(loaded_model.predict(preprocess(final_img_path)))
