@@ -21,7 +21,7 @@
             <Image Name="camera" Grid.ColumnSpan="5" />
 
             <Label Name="shape_l" Content="" FontSize="42" Foreground="Purple" Height="67" Width="304" Grid.ColumnSpan="2" Margin="59,9,43.936,1004"/>
-            <Label Name="shape_counter_l" Content="" FontSize="110" Foreground="Red" Margin="80,56,1113,665" Grid.ColumnSpan="4"/>
+            <Label Name="shape_counter_l" Content="" FontSize="60" Foreground="Red" Margin="47,63,820,795" Grid.ColumnSpan="4"/>
             <Label Name="done_l" Content="" FontSize="110" Foreground="Green" Width="798" Margin="58,40,969,687" Grid.ColumnSpan="4" />
             <Label Name="redraw_l" Content="" FontSize="110" Foreground="Red" Width="820" Grid.Column="3" Margin="137,466,415,381" />
 

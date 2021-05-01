@@ -424,18 +424,8 @@ namespace KinectDrawing
 
                                                     //Send the file created to the python Script
                                                     run_py_Csharp(filePath);
-                                                    //mapping part 
-                                                    if (python_results[1] == '1')
-                                                        python_results = "circle";
-                                                    else if (python_results[1] == '4')
-                                                        python_results = "rectangle";
-                                                    else if (python_results[1] == '3')
-                                                        python_results = "triangle";
-                                                    else if (python_results[1] == '0')
-                                                        python_results = "polygon";
-                                                    else if (python_results[1] == '2')
-                                                        python_results = "Line";
-
+                                                    
+                                                  
                                                     shape_counter_l.Content = python_results;
 
                                                 }

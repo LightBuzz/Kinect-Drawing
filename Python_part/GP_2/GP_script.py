@@ -16,7 +16,7 @@ import os
 import pathlib
 
 folder_path =  str(pathlib.Path().absolute()) + "\\models"
-
+#folder_path = "C:\\Users\\khale\\source\\repos\\Kinect-Drawing\\Python_part\\GP_2"
 
 #Obtain the path of the text file using OS argv
 data_path = sys.argv[1]
@@ -178,5 +178,36 @@ loaded_model = pickle.load(open(filename, 'rb'))
 
 
 #print("888")
-print(loaded_model.predict(preprocess(final_img_path)))
+predicted_class = loaded_model.predict(preprocess(final_img_path))
+prob_of_classes = loaded_model.predict_proba(preprocess(final_img_path))
+
+
 #print("999")
+predicted_class =  str(predicted_class)
+#mapping part 
+if predicted_class[1] == '1':
+    predicted_class = "Circle"
+elif predicted_class[1] == '4':
+    predicted_class = "Rectangle"
+elif predicted_class[1] == '3':
+    predicted_class = "Triangle"
+elif predicted_class[1] == '0':
+    predicted_class = "Polygon"
+elif predicted_class[1] == '2':
+    predicted_class = "Line"
+
+
+
+
+prob_of_classes = prob_of_classes[0]
+prob_of_classes_rounded = []
+for class_i in prob_of_classes:
+    prob_of_classes_rounded.append(int(round(class_i,2) * 100))
+
+
+
+
+print(predicted_class + " " +  str(prob_of_classes_rounded))
+#print(predicted_class + " " +  str(max(prob_of_classes_rounded)))
+
+
