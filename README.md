@@ -51,6 +51,10 @@ Simply download the project and hit "Start" using Visual Studio. This project is
 * It contains 5 classes (Rectangle, Triangle, Circle, Line, Polygone)
 * Used to train the model for classification
 
+
+# The Training Notebook
+* Used for custome training using the DataSet provided in the repo.
+
 ## Contributors
 * [Vangos Pterneas](http://pterneas.com) from [LightBuzz](http://lightbuzz.com) - Microsoft Kinect MVP
 
