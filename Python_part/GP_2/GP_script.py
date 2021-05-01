@@ -173,7 +173,7 @@ def preprocess(img_path): #input an image
 
 #Test1
 
-filename = os.path.join(folder_path, 'finalized_model.pkl')
+filename = os.path.join(folder_path, 'finalized_model_v3_LinesAdded.pkl')
 loaded_model = pickle.load(open(filename, 'rb'))
 #print("888")
 print(loaded_model.predict(preprocess(final_img_path)))
