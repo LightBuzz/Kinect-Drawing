@@ -173,7 +173,7 @@ def preprocess(img_path): #input an image
 
 #Test1
 #folder_path  = "C:\\Users\\khale\\Source\\Repos\\Kinect-Drawing\\Python_part\\GP_2"
-filename = os.path.join(folder_path, 'finalized_model_v3_LinesAdded.pkl')
+filename = os.path.join(folder_path, 'finalized_model_v4.pkl')
 loaded_model = pickle.load(open(filename, 'rb'))
 
 
@@ -184,25 +184,30 @@ prob_of_classes = loaded_model.predict_proba(preprocess(final_img_path))
 
 #print("999")
 predicted_class =  str(predicted_class)
-#mapping part 
-if predicted_class[1] == '1':
-    predicted_class = "Circle"
-elif predicted_class[1] == '4':
-    predicted_class = "Rectangle"
-elif predicted_class[1] == '3':
-    predicted_class = "Triangle"
-elif predicted_class[1] == '0':
-    predicted_class = "Polygon"
-elif predicted_class[1] == '2':
-    predicted_class = "Line"
-
-
 
 
 prob_of_classes = prob_of_classes[0]
 prob_of_classes_rounded = []
 for class_i in prob_of_classes:
     prob_of_classes_rounded.append(int(round(class_i,2) * 100))
+
+#mapping part 
+if predicted_class[1] == '0' and prob_of_classes_rounded[0] >= 78:
+    predicted_class = "Polygon"
+elif predicted_class[1] == '1' and prob_of_classes_rounded[1] >= 95:
+    predicted_class = "Circle"
+elif predicted_class[1] == '2' and prob_of_classes_rounded[2] >= 95:
+    predicted_class = "Line"
+elif predicted_class[1] == '3' and prob_of_classes_rounded[3] >= 95:
+    predicted_class = "Triangle"
+elif predicted_class[1] == '4' and prob_of_classes_rounded[4] >= 95:
+    predicted_class = "Rectangle"
+else:
+    predicted_class = "M3rf4 Yasta!"
+
+
+
+
 
 
 
