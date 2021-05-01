@@ -45,6 +45,11 @@ Simply download the project and hit "Start" using Visual Studio. This project is
 				trail.Points.Add(new Point { X = x, Y = y });
 			}
 		}
+		
+# The DataSet
+* Check out the DataSet Folder
+* It contains 5 classes (Rectangle, Triangle, Circle, Line, Polygone)
+* Used to train the model for classification
 
 ## Contributors
 * [Vangos Pterneas](http://pterneas.com) from [LightBuzz](http://lightbuzz.com) - Microsoft Kinect MVP
