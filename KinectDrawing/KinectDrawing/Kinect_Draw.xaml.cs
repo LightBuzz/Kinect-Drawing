@@ -195,7 +195,7 @@ namespace KinectDrawing
             psi.FileName = @"C:\Users\khale\AppData\Local\Programs\Python\Python37\python.exe";
 
             // 2) Provide script and arguments
-            var script = @"C:\Users\khale\OneDrive\Desktop\GP_2\GP_script.py";
+            var script = @"C:\Users\khale\Source\Repos\Kinect-Drawing\Python_part\GP_2\GP_script.py";
             var coord = file_path;
             //var coord = @"C:\Users\khale\OneDrive\Desktop\GP_2\6_1.txt";
 
@@ -223,7 +223,7 @@ namespace KinectDrawing
             //Console.WriteLine(errors);
             //Console.WriteLine();
             //Console.WriteLine("Results:");
-            Console.WriteLine("Hwa Dh: " + python_results);
+            Console.WriteLine("python_results: " + python_results);
 
             //Console.WriteLine();
         }
@@ -375,7 +375,7 @@ namespace KinectDrawing
 
 
                                                 //Collecting only one shape:
-                                                string shape_folder_name = "Lines";
+                                                string shape_folder_name = "Trash";
                                                 shape_path += "\\" + shape_folder_name;
                                                 user_counter = check_last_user_counter(user_id, shape_path) + 1;
 
@@ -383,6 +383,7 @@ namespace KinectDrawing
 
                                                 string fileName = user_id + "_" + user_counter + ".txt";
                                                 string filePath = shape_path + '\\' + fileName;
+                                                Console.WriteLine(filePath);
 
                                                 //Console.WriteLine("$ " + filePath);
                                                 if (!File.Exists(filePath))
@@ -421,19 +422,21 @@ namespace KinectDrawing
 
                                                     //Predicting part:
 
-                                                    ////Send the file created to the python Script
-                                                    //run_py_Csharp(filePath);
-                                                    ////mapping part 
-                                                    //if (python_results[1] == '0')
-                                                    //    python_results = "circle";
-                                                    //else if (python_results[1] == '1')
-                                                    //    python_results = "rectangle";
-                                                    //else if (python_results[1] == '2')
-                                                    //    python_results = "triangle";
-                                                    //else if (python_results[1] == '3')
-                                                    //    python_results = "polygon";
-                                                        
-                                                    //shape_counter_l.Content = python_results;
+                                                    //Send the file created to the python Script
+                                                    run_py_Csharp(filePath);
+                                                    //mapping part 
+                                                    if (python_results[1] == '1')
+                                                        python_results = "circle";
+                                                    else if (python_results[1] == '4')
+                                                        python_results = "rectangle";
+                                                    else if (python_results[1] == '3')
+                                                        python_results = "triangle";
+                                                    else if (python_results[1] == '0')
+                                                        python_results = "polygon";
+                                                    else if (python_results[1] == '2')
+                                                        python_results = "Line";
+
+                                                    shape_counter_l.Content = python_results;
 
                                                 }
                                                 else

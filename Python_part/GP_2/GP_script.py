@@ -15,12 +15,12 @@ import sys
 import os
 import pathlib
 
-folder_path =  str(pathlib.Path().absolute())
+folder_path =  str(pathlib.Path().absolute()) + "\\models"
 
 
 #Obtain the path of the text file using OS argv
-#data_path = sys.argv[1]
-data_path = os.path.join(folder_path, "1_1.txt")
+data_path = sys.argv[1]
+#data_path = os.path.join(folder_path, "0_5.txt")
 
 #print("111")
 #Preprocessing and obtain the data coord from the txt file
@@ -172,9 +172,11 @@ def preprocess(img_path): #input an image
 
 
 #Test1
-
+#folder_path  = "C:\\Users\\khale\\Source\\Repos\\Kinect-Drawing\\Python_part\\GP_2"
 filename = os.path.join(folder_path, 'finalized_model_v3_LinesAdded.pkl')
 loaded_model = pickle.load(open(filename, 'rb'))
+
+
 #print("888")
 print(loaded_model.predict(preprocess(final_img_path)))
 #print("999")
