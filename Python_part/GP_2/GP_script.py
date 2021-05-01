@@ -171,7 +171,7 @@ def preprocess(img_path): #input an image
     return hog_features
 
 
-
+#Test1
 
 filename = os.path.join(folder_path, 'finalized_model.pkl')
 loaded_model = pickle.load(open(filename, 'rb'))

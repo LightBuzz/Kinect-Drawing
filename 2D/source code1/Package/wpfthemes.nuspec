@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<package> 
+  <metadata> 
+    <id>wpfthemes</id> 
+    <version>0.0.1</version> 
+    <authors>Rudi Grobler</authors>
+    <description>WPF Themes is a collection of themes for WPF</description> 
+    <language>en-US</language>
+    <licenseUrl>http://wpfthemes.codeplex.com/license</licenseUrl>    
+    <projectUrl>http://wpfthemes.codeplex.com/</projectUrl>
+  </metadata> 
+  <files>
+    <file src="..\WPF.Themes\bin\Debug\*.dll" target="lib" />
+  </files>
+</package>
