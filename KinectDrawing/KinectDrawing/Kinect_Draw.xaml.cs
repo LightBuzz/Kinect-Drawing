@@ -330,45 +330,54 @@ namespace KinectDrawing
 
                                                 left_lasso_gesture_handling = true;
 
+                                                string shape_path = DATA_PATH;
+
+                                                //Collecting 5  Shapes (5 drawings for each one)
                                                 //user_counter is used to obtain the number of saved files in each shape folder for a certain user
                                                 //User is required to draw 5 drawings for each shape(5 shapes) and that's  the main_counter job  
-                                                string shape_path = DATA_PATH;
-                                                if (main_counter < 6)
-                                                {
-                                                    shape_path += "\\s1";
-                                                    user_counter = check_last_user_counter(user_id, shape_path) + 1;
+                                                //if (main_counter < 6)
+                                                //{
+                                                //    shape_path += "\\s1";
+                                                //    user_counter = check_last_user_counter(user_id, shape_path) + 1;
 
-                                                }
-                                                else if (main_counter > 5 && main_counter < 11)
-                                                {
-                                                    shape_path += "\\s2";
-                                                    user_counter = check_last_user_counter(user_id, shape_path) + 1;
-                                                    shape_l.Content = "Shape = S2";
-                                                }
-                                                else if (main_counter > 10 && main_counter < 16)
-                                                {
-                                                    shape_path += "\\s3";
-                                                    user_counter = check_last_user_counter(user_id, shape_path) + 1;
-                                                    shape_l.Content = "Shape = S3";
-                                                }
-                                                else if (main_counter > 15 && main_counter < 21)
-                                                {
-                                                    shape_path += "\\s4";
-                                                    user_counter = check_last_user_counter(user_id, shape_path) + 1;
-                                                    shape_l.Content = "Shape = S4";
-                                                }
-                                                else if (main_counter > 20 && main_counter < 26)
-                                                {
-                                                    shape_path += "\\s5";
-                                                    user_counter = check_last_user_counter(user_id, shape_path) + 1;
-                                                    shape_l.Content = "Shape = S5";
+                                                //}
+                                                //else if (main_counter > 5 && main_counter < 11)
+                                                //{
+                                                //    shape_path += "\\s2";
+                                                //    user_counter = check_last_user_counter(user_id, shape_path) + 1;
+                                                //    shape_l.Content = "Shape = S2";
+                                                //}
+                                                //else if (main_counter > 10 && main_counter < 16)
+                                                //{
+                                                //    shape_path += "\\s3";
+                                                //    user_counter = check_last_user_counter(user_id, shape_path) + 1;
+                                                //    shape_l.Content = "Shape = S3";
+                                                //}
+                                                //else if (main_counter > 15 && main_counter < 21)
+                                                //{
+                                                //    shape_path += "\\s4";
+                                                //    user_counter = check_last_user_counter(user_id, shape_path) + 1;
+                                                //    shape_l.Content = "Shape = S4";
+                                                //}
+                                                //else if (main_counter > 20 && main_counter < 26)
+                                                //{
+                                                //    shape_path += "\\s5";
+                                                //    user_counter = check_last_user_counter(user_id, shape_path) + 1;
+                                                //    shape_l.Content = "Shape = S5";
 
-                                                }
-                                                else
-                                                {
-                                                    shape_path += "\\trash";
-                                                    shape_l.Content = "Shape = trash";
-                                                }
+                                                //}
+                                                //else
+                                                //{
+                                                //    shape_path += "\\trash";
+                                                //    shape_l.Content = "Shape = trash";
+                                                //}
+
+
+
+                                                //Collecting only one shape:
+                                                string shape_folder_name = "Lines";
+                                                shape_path += "\\" + shape_folder_name;
+                                                user_counter = check_last_user_counter(user_id, shape_path) + 1;
 
 
 
@@ -410,19 +419,21 @@ namespace KinectDrawing
                                                         canvas.Children.Add(trail);
                                                     }
 
-                                                    //Send the file created to the python Script
-                                                    run_py_Csharp(filePath);
-                                                    //mapping part 
-                                                    if (python_results[1] == '0')
-                                                        python_results = "circle";
-                                                    else if (python_results[1] == '1')
-                                                        python_results = "rectangle";
-                                                    else if (python_results[1] == '2')
-                                                        python_results = "triangle";
-                                                    else if (python_results[1] == '3')
-                                                        python_results = "polygon";
+                                                    //Predicting part:
+
+                                                    ////Send the file created to the python Script
+                                                    //run_py_Csharp(filePath);
+                                                    ////mapping part 
+                                                    //if (python_results[1] == '0')
+                                                    //    python_results = "circle";
+                                                    //else if (python_results[1] == '1')
+                                                    //    python_results = "rectangle";
+                                                    //else if (python_results[1] == '2')
+                                                    //    python_results = "triangle";
+                                                    //else if (python_results[1] == '3')
+                                                    //    python_results = "polygon";
                                                         
-                                                    shape_counter_l.Content = python_results;
+                                                    //shape_counter_l.Content = python_results;
 
                                                 }
                                                 else
