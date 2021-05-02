@@ -64,6 +64,12 @@
     <Compile Include="Kinect_Draw.xaml.cs">
       <DependentUpon>Kinect_Draw.xaml</DependentUpon>
     </Compile>
+    <Compile Include="three_dim_page.xaml.cs">
+      <DependentUpon>three_dim_page.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="two_dim_page.xaml.cs">
+      <DependentUpon>two_dim_page.xaml</DependentUpon>
+    </Compile>
     <Page Include="DrawingBrush.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -92,6 +98,14 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Kinect_Draw.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="three_dim_page.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="two_dim_page.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

@@ -8,7 +8,7 @@
       d:DesignHeight="450" d:DesignWidth="800"
       Title="old_user">
 
-    <Grid>
+    <Grid Margin="350,50,0,0">
         <Button x:Name="search_id" Content="Search for your ID" HorizontalAlignment="Left" Margin="255,25,0,0" VerticalAlignment="Top" Width="200" Click="search_id_Click" RenderTransformOrigin="-0.067,-5" />
         <ScrollViewer HorizontalAlignment="Left" Height="155" Margin="240,60,0,0" VerticalAlignment="Top" Width="215" Name="scroll_id_viewer">
             <TextBox Name="scroll_text_box_ids" TextWrapping="Wrap" ></TextBox>

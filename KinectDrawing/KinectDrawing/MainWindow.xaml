@@ -1,30 +1,29 @@
-﻿
-
-
-<Window x:Class="KinectDrawing.MainWindow"
+﻿<Window x:Class="KinectDrawing.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:KinectDrawing"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="Auto" Width="Auto" WindowState="Maximized" ResizeMode="NoResize">
     <Grid RenderTransformOrigin="0.537,0.525">
-        <Button Name="new" Content="New" HorizontalAlignment="Left" Margin="685,15,0,0" VerticalAlignment="Top" Width="75"  RenderTransformOrigin="-0.333,-7" Click="new_Click"/>
-
-        <Frame x:Name="Main_f" Navigated="Main_f_Navigated" Margin="40,50,52,14" RenderTransformOrigin="0.5,0.5" Source="old_user.xaml" NavigationUIVisibility="Hidden">
+        <Button Name="new" Content="new user" HorizontalAlignment="Right" Margin="0,15,34,0" VerticalAlignment="Top" Width="172"  RenderTransformOrigin="-0.333,-7" Click="new_Click" Height="37"/>
+        <Button Name="old" Content="old user" HorizontalAlignment="Left" Margin="34,15,0,0" VerticalAlignment="Top" Width="172" Height="37" Click="old_click"/>
+        <Frame x:Name="Main_f" Navigated="Main_f_Navigated" NavigationUIVisibility="Hidden" HorizontalAlignment="Left" Height="500" Margin="34,97,-91.4,0" VerticalAlignment="Top" Width="1450" RenderTransformOrigin="0.5,0.5">
+       
             <Frame.RenderTransform>
-
                 <TransformGroup>
                     <ScaleTransform/>
-                    <SkewTransform/>
-
-                    <RotateTransform Angle="-0.195"/>
-                    <TranslateTransform/>
+                    <SkewTransform AngleY="0.426"/>
+                    <RotateTransform/>
+                    <TranslateTransform Y="3.041"/>
                 </TransformGroup>
-
             </Frame.RenderTransform>
         </Frame>
+        <Button x:Name="_new" Content="new user" HorizontalAlignment="Right" Margin="0,15,34,0" VerticalAlignment="Top" Width="172"  RenderTransformOrigin="-0.333,-7" Click="new_Click" Height="37"/>
+        <Button x:Name="old_Copy" Content="old user" HorizontalAlignment="Left" Margin="34,15,0,0" VerticalAlignment="Top" Width="172" Height="37" Click="old_click"/>
+        <Button x:Name="env2" Content="2-dimension" HorizontalAlignment="Left" Margin="235,15,0,0" VerticalAlignment="Top" Width="144" Height="37" Click="two_dim"/>
+        <Button x:Name="env3" Content="3-dimension" HorizontalAlignment="Right" Margin="0,15,224.6,0" VerticalAlignment="Top" Width="126"  RenderTransformOrigin="-0.333,-7" Click="three_dim" Height="37"/>
 
 
     </Grid>

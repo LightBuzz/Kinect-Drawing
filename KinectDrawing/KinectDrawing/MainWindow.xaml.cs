@@ -23,7 +23,7 @@ namespace KinectDrawing
     /// </summary>
     /// 
 
-  
+
 
     public partial class MainWindow : Window
     {
@@ -48,14 +48,54 @@ namespace KinectDrawing
 
             Main_f.Content = new new_user();
 
-            Button source = e.Source as Button;
-            if (source != null)
-            {
-                source.Visibility = Visibility.Hidden;
-            }
+            //Button source = e.Source as Button;
+            //if (source != null)
+            //{
+            //    source.Visibility = Visibility.Hidden;
+            //}
 
 
         }
 
+        private void old_click(object sender, RoutedEventArgs e)
+        {
+
+            Main_f.Content = new old_user();
+
+            //Button source = e.Source as Button;
+            //if (source != null)
+            //{
+            //    source.Visibility = Visibility.Hidden;
+            //}
+
+
+        }
+
+        private void two_dim(object sender, RoutedEventArgs e)
+        {
+
+            Main_f.Content = new two_dim_page();
+
+            //Button source = e.Source as Button;
+            //if (source != null)
+            //{
+            //    source.Visibility = Visibility.Hidden;
+            //}
+
+
+        }
+        private void three_dim(object sender, RoutedEventArgs e)
+        {
+
+            Main_f.Content = new three_dim_page();
+
+            //Button source = e.Source as Button;
+            //if (source != null)
+            //{
+            //    source.Visibility = Visibility.Hidden;
+            //}
+
+
+        }
     }
 }
