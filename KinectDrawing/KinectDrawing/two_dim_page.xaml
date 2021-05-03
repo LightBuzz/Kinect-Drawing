@@ -10,7 +10,8 @@
 
     <Grid>
         <TextBlock HorizontalAlignment="Center" Height="90" Margin="125,193,175,0" TextWrapping="Wrap" Text="kinect heros 2d" FontSize="60" FontStyle="Italic" Foreground="Gold" VerticalAlignment="Top" Width="500" TextAlignment="Center" RenderTransformOrigin="0.476,0.511" />
-    
-    
+
+        <Button Name="btn2" Content="button 3ady gdn" HorizontalAlignment="Left" Margin="320,290,0,0" VerticalAlignment="Top" Width="140" Click="ma4y_event" RenderTransformOrigin="0.533,0" />
+
     </Grid>
 </Page>

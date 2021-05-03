@@ -9,7 +9,7 @@
     <Grid RenderTransformOrigin="0.537,0.525">
         <Button Name="new" Content="new user" HorizontalAlignment="Right" Margin="0,15,34,0" VerticalAlignment="Top" Width="172"  RenderTransformOrigin="-0.333,-7" Click="new_Click" Height="37"/>
         <Button Name="old" Content="old user" HorizontalAlignment="Left" Margin="34,15,0,0" VerticalAlignment="Top" Width="172" Height="37" Click="old_click"/>
-        <Frame x:Name="Main_f" Navigated="Main_f_Navigated" NavigationUIVisibility="Hidden" HorizontalAlignment="Left" Height="500" Margin="34,97,-91.4,0" VerticalAlignment="Top" Width="1450" RenderTransformOrigin="0.5,0.5">
+        <Frame x:Name="Main_f" Source="home_kinect_page.xaml" Navigated="Main_f_Navigated" NavigationUIVisibility="Hidden" HorizontalAlignment="Left" Height="500" Margin="34,97,-91.4,0" VerticalAlignment="Top" Width="1450" RenderTransformOrigin="0.5,0.5">
        
             <Frame.RenderTransform>
                 <TransformGroup>

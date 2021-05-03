@@ -8,7 +8,7 @@
       d:DesignHeight="450" d:DesignWidth="800"
       Title="new_user">
 
-    <Grid>
+    <Grid Margin="350,50,0,0">
         <Label Content="Name:" HorizontalAlignment="Left" Margin="272,33,0,0" VerticalAlignment="Top" Width="65" Height="30"/>
         <TextBox Name="user_name"  HorizontalAlignment="Left" Height="23" Margin="367,38,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.5,0" />
         <Label Content="Used Hand:" HorizontalAlignment="Left" Margin="267,72,0,0" VerticalAlignment="Top" Width="80" RenderTransformOrigin="0.438,1.385"/>

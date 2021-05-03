@@ -55,6 +55,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="home_kinect_page.xaml.cs">
+      <DependentUpon>home_kinect_page.xaml</DependentUpon>
+    </Compile>
     <Compile Include="new_user.xaml.cs">
       <DependentUpon>new_user.xaml</DependentUpon>
     </Compile>
@@ -71,6 +74,10 @@
       <DependentUpon>two_dim_page.xaml</DependentUpon>
     </Compile>
     <Page Include="DrawingBrush.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="home_kinect_page.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
