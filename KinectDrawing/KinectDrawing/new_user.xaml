@@ -9,11 +9,11 @@
       Title="new_user">
 
     <Grid Margin="350,50,0,0">
-        <Label Content="Name:" HorizontalAlignment="Left" Margin="272,33,0,0" VerticalAlignment="Top" Width="65" Height="30"/>
+        <Label Content="Name:" HorizontalAlignment="Left" Margin="272,33,0,0" VerticalAlignment="Top" Width="65" Height="30" Foreground="DarkBlue"/>
         <TextBox Name="user_name"  HorizontalAlignment="Left" Height="23" Margin="367,38,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.5,0" />
-        <Label Content="Used Hand:" HorizontalAlignment="Left" Margin="267,72,0,0" VerticalAlignment="Top" Width="80" RenderTransformOrigin="0.438,1.385"/>
-        <RadioButton Name="Left_h" Content="Left" HorizontalAlignment="Left" Margin="367,78,0,0" VerticalAlignment="Top" GroupName="G1" Width="56"/>
-        <RadioButton Name="right_h" Content="Right" HorizontalAlignment="Left" Margin="367,118,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.706,0.667" GroupName="G1" Width="70"/>
+        <Label Content="Used Hand:" HorizontalAlignment="Left" Margin="267,72,0,0" VerticalAlignment="Top" Width="80" RenderTransformOrigin="0.438,1.385" Foreground="DarkBlue"/>
+        <RadioButton Name="Left_h" Content="Left" HorizontalAlignment="Left" Margin="367,78,0,0" VerticalAlignment="Top" GroupName="G1" Width="56" Foreground="DarkBlue"/>
+        <RadioButton Name="right_h" Content="Right" HorizontalAlignment="Left" Margin="367,118,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.706,0.667" GroupName="G1" Width="70" Foreground="DarkBlue"/>
         <Button x:Name="submit_b_newUser" Content="Start" HorizontalAlignment="Left" Margin="367,198,0,0" VerticalAlignment="Top" Width="75" Click="submit_b_newUser_Click" />
 
     </Grid>

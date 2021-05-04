@@ -11,10 +11,10 @@
     <Grid Margin="350,50,0,0">
         <Button x:Name="search_id" Content="Search for your ID" HorizontalAlignment="Left" Margin="255,25,0,0" VerticalAlignment="Top" Width="200" Click="search_id_Click" RenderTransformOrigin="-0.067,-5" />
         <ScrollViewer HorizontalAlignment="Left" Height="155" Margin="240,60,0,0" VerticalAlignment="Top" Width="215" Name="scroll_id_viewer">
-            <TextBox Name="scroll_text_box_ids" TextWrapping="Wrap" ></TextBox>
+            <TextBox Name="scroll_text_box_ids" TextWrapping="Wrap" IsReadOnly="True"></TextBox>
         </ScrollViewer>
             <TextBox Name="user_id" HorizontalAlignment="Left" Height="23" Margin="300,235,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.458,-0.087"/>
         <Button Name="open_kinect" Content="Start" HorizontalAlignment="Left" Margin="320,290,0,0" VerticalAlignment="Top" Width="75" Click="open_kinect_Click" RenderTransformOrigin="0.533,0" />
-        <Label Content="Type it here:" HorizontalAlignment="Left" Margin="205,234,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.473,-0.346"/>
+        <Label Content="Type it here:" HorizontalAlignment="Left" Margin="205,234,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.473,-0.346" Foreground="DarkBlue"/>
     </Grid>
 </Page>

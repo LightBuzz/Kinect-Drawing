@@ -75,11 +75,14 @@ namespace KinectDrawing
                         (App.Current as App).data_traveling1 = user_id_old_user;
                         (App.Current as App).data_traveling2 = drawing_hand;
 
+                        Uri uri = new Uri("home_kinect_page.xaml", UriKind.Relative);
+                        this.NavigationService.Navigate(uri);
+
                     }
                 }
                 else
                 {
-                    MessageBox.Show("no current user with this id " + user_id_old_user, "Alert", MessageBoxButton.OK, MessageBoxImage.Information);
+                    MessageBox.Show("no current user with id =  " + user_id_old_user, "Alert", MessageBoxButton.OK, MessageBoxImage.Information);
                 }
             }
 

@@ -55,8 +55,14 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="help_user_page.xaml.cs">
+      <DependentUpon>help_user_page.xaml</DependentUpon>
+    </Compile>
     <Compile Include="home_kinect_page.xaml.cs">
       <DependentUpon>home_kinect_page.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="how_to_draw.xaml.cs">
+      <DependentUpon>how_to_draw.xaml</DependentUpon>
     </Compile>
     <Compile Include="new_user.xaml.cs">
       <DependentUpon>new_user.xaml</DependentUpon>
@@ -67,17 +73,35 @@
     <Compile Include="Kinect_Draw.xaml.cs">
       <DependentUpon>Kinect_Draw.xaml</DependentUpon>
     </Compile>
+    <Compile Include="primitive_help.xaml.cs">
+      <DependentUpon>primitive_help.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="sketches_help.xaml.cs">
+      <DependentUpon>sketches_help.xaml</DependentUpon>
+    </Compile>
     <Compile Include="three_dim_page.xaml.cs">
       <DependentUpon>three_dim_page.xaml</DependentUpon>
     </Compile>
     <Compile Include="two_dim_page.xaml.cs">
       <DependentUpon>two_dim_page.xaml</DependentUpon>
     </Compile>
+    <Page Include="bubblecreme.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="DrawingBrush.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="help_user_page.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="home_kinect_page.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="how_to_draw.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -108,6 +132,22 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="primitive_help.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="red.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="sketches_help.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Theme.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="three_dim_page.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -115,6 +155,10 @@
     <Page Include="two_dim_page.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="whiteblue.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
   </ItemGroup>
   <ItemGroup>
@@ -144,6 +188,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

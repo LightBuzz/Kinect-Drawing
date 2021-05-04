@@ -14,7 +14,6 @@ using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using System.Windows.Navigation;
 
-
 namespace KinectDrawing
 {
 
@@ -29,6 +28,9 @@ namespace KinectDrawing
     {
         public MainWindow()
         {
+            ResourceDictionary skin = new ResourceDictionary();
+            skin.Source = new Uri(@"C:\Users\LENOVO\Documents\GitHub\Kinect-Drawing\KinectDrawing\KinectDrawing\whiteblue.xaml", UriKind.Absolute);
+            App.Current.Resources.MergedDictionaries.Add(skin);
             InitializeComponent();
         }
 
