@@ -9,7 +9,7 @@
       Title="sketches_help">
 
     <Grid>
-        <Image Source="C:\Users\LENOVO\Documents\GitHub\Kinect-Drawing\KinectDrawing\KinectDrawing\bin\Debug\car_img.png" Margin="248,125,213,0" Height="143" VerticalAlignment="Top"></Image>
+        <Image Source="C:\Users\LENOVO\Documents\GitHub\Kinect-Drawing\resources\car_img.png" Margin="248,125,213,0" Height="143" VerticalAlignment="Top"></Image>
 
         <Label Content="simple car :" HorizontalAlignment="Left" Margin="108,155,0,0" VerticalAlignment="Top" Foreground="Red"/>
 

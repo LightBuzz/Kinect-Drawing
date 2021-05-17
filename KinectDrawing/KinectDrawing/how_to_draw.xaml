@@ -11,17 +11,17 @@
     <Grid>
         <Label Content="Lasso gesture for saving data :" HorizontalAlignment="Left" Margin="0,30,0,0" VerticalAlignment="Top" Foreground="DarkGreen"/>
 
-        <Image Source="C:\Users\LENOVO\Documents\GitHub\Kinect-Drawing\KinectDrawing\KinectDrawing\bin\Debug\lasso.png" Margin="280,10,301,0" Height="117" VerticalAlignment="Top"></Image>
+        <Image Source="C:\Users\LENOVO\Documents\GitHub\Kinect-Drawing\resources\lasso.png" Margin="280,10,301,0" Height="117" VerticalAlignment="Top"></Image>
 
 
         <Label Content="Closed hand for start drawing :" HorizontalAlignment="Left" Margin="10,222,0,0" VerticalAlignment="Top" Foreground="DarkGreen"/>
 
-        <Image Source="C:\Users\LENOVO\Documents\GitHub\Kinect-Drawing\KinectDrawing\KinectDrawing\bin\Debug\closed.png" Margin="298,177,283,0" Height="117" VerticalAlignment="Top"></Image>
+        <Image Source="C:\Users\LENOVO\Documents\GitHub\Kinect-Drawing\resources\closed.png" Margin="298,177,283,0" Height="117" VerticalAlignment="Top"></Image>
 
 
         <Label Content="Open hand for stop drawing :" HorizontalAlignment="Left" Margin="10,366,0,0" VerticalAlignment="Top" Foreground="DarkGreen"/>
 
-        <Image Source="C:\Users\LENOVO\Documents\GitHub\Kinect-Drawing\KinectDrawing\KinectDrawing\bin\Debug\opened.png" Margin="311,323,270,0" Height="117" VerticalAlignment="Top"></Image>
+        <Image Source="C:\Users\LENOVO\Documents\GitHub\Kinect-Drawing\resources\opened.png" Margin="311,323,270,0" Height="117" VerticalAlignment="Top"></Image>
 
 
     </Grid>
