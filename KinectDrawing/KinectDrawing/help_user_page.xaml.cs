@@ -43,7 +43,8 @@ namespace KinectDrawing
                 help_container.Content = new how_to_draw();
             }
             else {
-                
+                MessageBox.Show("not current help selected", "Alert", MessageBoxButton.OK, MessageBoxImage.Information);
+
             }
         }
     }
