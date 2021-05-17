@@ -194,16 +194,16 @@ for class_i in prob_of_classes:
 #mapping part 
 if predicted_class[1] == '0' and prob_of_classes_rounded[0] >= 78:
     predicted_class = "Polygon"
-elif predicted_class[1] == '1' and prob_of_classes_rounded[1] >= 95:
+elif predicted_class[1] == '1' and prob_of_classes_rounded[1] >= 90:
     predicted_class = "Circle"
-elif predicted_class[1] == '2' and prob_of_classes_rounded[2] >= 95:
+elif predicted_class[1] == '2' and prob_of_classes_rounded[2] >= 90:
     predicted_class = "Line"
-elif predicted_class[1] == '3' and prob_of_classes_rounded[3] >= 95:
+elif predicted_class[1] == '3' and prob_of_classes_rounded[3] >= 90:
     predicted_class = "Triangle"
-elif predicted_class[1] == '4' and prob_of_classes_rounded[4] >= 95:
+elif predicted_class[1] == '4' and prob_of_classes_rounded[4] >= 90:
     predicted_class = "Rectangle"
 else:
-    predicted_class = "M3rf4 Yasta!"
+    predicted_class = "I Don't know!"
 
 
 
@@ -214,5 +214,3 @@ else:
 
 print(predicted_class + " " +  str(prob_of_classes_rounded))
 #print(predicted_class + " " +  str(max(prob_of_classes_rounded)))
-
-

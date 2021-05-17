@@ -457,7 +457,7 @@ namespace KinectDrawing
                                     //Clear
                                     if (body.HandLeftState == HandState.Closed)
                                     {
-                                        
+
 
                                         canvas.Children.Clear();
                                         brush = generate_new_brush();
@@ -468,18 +468,18 @@ namespace KinectDrawing
 
                                     }
 
-                                    ////Changing color
-                                    //if (body.HandRightState == HandState.Open)
-                                    //{
-                                    //    left_lasso_gesture_handling = false;
+                                    //Changing color
+                                    if (body.HandRightState == HandState.Open)
+                                    {
+                                        left_lasso_gesture_handling = false;
 
-                                    //    if (trail.Stroke == Brushes.Red)
-                                    //        trail.Stroke = Brushes.Green;
-                                    //    else if (trail.Stroke == Brushes.Green)
-                                    //        trail.Stroke = Brushes.Blue;
-                                    //    else
-                                    //        trail.Stroke = Brushes.Red;
-                                    //}
+                                        if (trail.Stroke == Brushes.Red)
+                                            trail.Stroke = Brushes.Green;
+                                        else if (trail.Stroke == Brushes.Green)
+                                            trail.Stroke = Brushes.Blue;
+                                        else
+                                            trail.Stroke = Brushes.Red;
+                                    }
 
                                     Canvas.SetLeft(brush, x - brush.Width / 2.0);
                                     Canvas.SetTop(brush, y - brush.Height);
