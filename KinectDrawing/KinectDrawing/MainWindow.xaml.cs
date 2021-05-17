@@ -14,6 +14,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using System.Windows.Navigation;
 
+
 namespace KinectDrawing
 {
 
@@ -21,7 +22,6 @@ namespace KinectDrawing
     /// Interaction logic for MainWindow.xaml
     /// </summary>
     /// 
-
 
 
     public partial class MainWindow : Window

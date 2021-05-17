@@ -11,23 +11,23 @@
     <Grid>
         <Label Content="circle :" HorizontalAlignment="Left" Margin="0,30,0,0" VerticalAlignment="Top" Foreground="Red"/>
 
-        <Image Source="C:\Users\LENOVO\Documents\GitHub\Kinect-Drawing\resources\circle_img.jpg" Margin="0,20,662,0" Height="54" VerticalAlignment="Top"></Image>
+        <Image Source="C:\Users\khale\source\repos\Kinect-Drawing\resources\circle_img.jpg" Margin="0,20,662,0" Height="54" VerticalAlignment="Top"></Image>
 
         <Label Content="rectangle :" HorizontalAlignment="Left" Margin="797,56,-61,0" VerticalAlignment="Top" Foreground="Red"/>
 
-        <Image Source="C:\Users\LENOVO\Documents\GitHub\Kinect-Drawing\resources\rectangle_img.png" Margin="797,20,-77,337.6"></Image>
+        <Image Source="C:\Users\khale\source\repos\Kinect-Drawing\resources\rectangle_img.png" Margin="797,20,-77,337.6"></Image>
 
         <Label Content="triangle :" HorizontalAlignment="Left" Margin="25,206,0,0" VerticalAlignment="Top" Foreground="Red" Width="79" Height="29"/>
 
-        <Image Source="C:\Users\LENOVO\Documents\GitHub\Kinect-Drawing\resources\triangle_img.png" Margin="-17,198,696,214.6"></Image>
+        <Image Source="C:\Users\khale\source\repos\Kinect-Drawing\resources\triangle_img.png" Margin="-17,198,696,214.6"></Image>
 
         <Label Content="polygon :" HorizontalAlignment="Left" Margin="811,342,-77,0" VerticalAlignment="Top" Foreground="Red" Width="66"/>
 
-        <Image Source="C:\Users\LENOVO\Documents\GitHub\Kinect-Drawing\resources\polygon_img.png" Margin="771,317,-132,59.6"></Image>
+        <Image Source="C:\Users\khale\source\repos\Kinect-Drawing\resources\polygon_img.png" Margin="771,317,-132,59.6"></Image>
 
         <Label Content="line :" HorizontalAlignment="Left" Margin="25,413,0,0" VerticalAlignment="Top" Foreground="Red" Width="49" Height="27"/>
 
-        <Image Source="C:\Users\LENOVO\Documents\GitHub\Kinect-Drawing\resources\line_img.png" Margin="-23,385,662,-13.4" Height="78" VerticalAlignment="Top"></Image>
+        <Image Source="C:\Users\khale\source\repos\Kinect-Drawing\resources\line_img.png" Margin="-23,385,662,-13.4" Height="78" VerticalAlignment="Top"></Image>
 
     </Grid>
 </Page>

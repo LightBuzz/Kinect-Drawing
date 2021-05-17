@@ -25,9 +25,11 @@ import pathlib
 
 """#Obtain the path using OS argv"""
 
-data_path = "1_4.txt"
-folder_path = "C:\\Users\\khale\\source\\repos\\Kinect-Drawing\\Python_part\\GP_2"
+folder_path =  str(pathlib.Path().absolute()) + "\\models"
+#folder_path = "C:\\Users\\khale\\source\\repos\\Kinect-Drawing\\Python_part\\GP_2"
 
+#Obtain the path of the text file using OS argv
+data_path = sys.argv[1]
 
 """#Preprocessing and obtain the data coord of many shapes from the txt file
 
@@ -133,7 +135,7 @@ ht, wd, cc = img.shape
 ww = hh = (math.ceil(max(wd, ht) / 28) + 1) * 28
 
 # create new image of desired size and color (blue) for padding
-color = (0, 0, 0)
+color = (255, 255, 255)
 result = np.full((hh, ww, cc), color, dtype=np.uint8)
 
 # compute center offset
@@ -220,15 +222,15 @@ for class_i in prob_of_classes:
 
 #mapping part 
 if predicted_class[1] == '0' and prob_of_classes_rounded[0] >= 78:
-    predicted_class = "Polygon"
+    predicted_class = "House"
 elif predicted_class[1] == '1' and prob_of_classes_rounded[1] >= 90:
-    predicted_class = "Circle"
+    predicted_class = "Air Plane"
 elif predicted_class[1] == '2' and prob_of_classes_rounded[2] >= 90:
-    predicted_class = "Line"
+    predicted_class = "Tree"
 elif predicted_class[1] == '3' and prob_of_classes_rounded[3] >= 90:
-    predicted_class = "Triangle"
+    predicted_class = "Bicycle"
 elif predicted_class[1] == '4' and prob_of_classes_rounded[4] >= 90:
-    predicted_class = "Rectangle"
+    predicted_class = "T-shirt"
 else:
     predicted_class = "I Don't know!"
 

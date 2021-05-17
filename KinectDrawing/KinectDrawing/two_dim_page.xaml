@@ -14,7 +14,7 @@
         <Button Name="btn2" Content="primitive shapes" HorizontalAlignment="Left" Margin="100,290,0,0" VerticalAlignment="Top" Width="140" Click="primitive_shapes_fn" RenderTransformOrigin="0.533,0" Height="32" />
         <Button Name="btn3" Content="sketches" HorizontalAlignment="Center" Margin="335,290,325,0" VerticalAlignment="Top" Width="140" Click="sketches_fn" RenderTransformOrigin="0.533,0" Height="32" />
         <Button Name="btn4" HorizontalAlignment="Right" Margin="10,290,100,0" VerticalAlignment="Top" Width="140" Click="go_to_help_page"  RenderTransformOrigin="0.533,0" >
-            <Image Source="C:\Users\LENOVO\Documents\GitHub\Kinect-Drawing\resources\6363280-help-button-icon-blue-glossy-with-shadow-illustration.jpg" Height="29" Width="240"></Image>
+            <Image Source="C:\Users\khale\source\repos\Kinect-Drawing\resources\6363280-help-button-icon-blue-glossy-with-shadow-illustration.jpg" Height="29" Width="240"></Image>
 
         </Button>
 

@@ -64,6 +64,9 @@
     <Compile Include="how_to_draw.xaml.cs">
       <DependentUpon>how_to_draw.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Kinect_Draw_Complex.xaml.cs">
+      <DependentUpon>Kinect_Draw_Complex.xaml</DependentUpon>
+    </Compile>
     <Compile Include="new_user.xaml.cs">
       <DependentUpon>new_user.xaml</DependentUpon>
     </Compile>
@@ -104,6 +107,10 @@
     <Page Include="how_to_draw.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Kinect_Draw_Complex.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>

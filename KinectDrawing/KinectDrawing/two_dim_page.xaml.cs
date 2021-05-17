@@ -56,8 +56,9 @@ namespace KinectDrawing
             else
             {
                 MessageBox.Show("user selected with id = " + selected1 + selected2, "Alert", MessageBoxButton.OK, MessageBoxImage.Information);
-                Kinect_Draw kd = new Kinect_Draw(selected1, selected2);
-                kd.Show();
+                
+                Kinect_Draw_Complex kdx = new Kinect_Draw_Complex(selected1, selected2);
+                kdx.Show();
             }
 
         }

@@ -1,0 +1,41 @@
+﻿<Window x:Class="KinectDrawing.Kinect_Draw_Complex"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:KinectDrawing"
+        mc:Ignorable="d"
+        Title="KINECT Drawing" Height="350" Width="525"
+        WindowState="Maximized"
+        Background="Black"
+        Closing="Window_Closing">
+    <Viewbox>
+        <Grid Width="1920" Height="1080">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="267*"/>
+                <ColumnDefinition Width="140*"/>
+                <ColumnDefinition Width="46*"/>
+                <ColumnDefinition Width="1372*"/>
+                <ColumnDefinition Width="95*"/>
+            </Grid.ColumnDefinitions>
+            <Image Name="camera" Grid.ColumnSpan="5" />
+
+            <Label Name="shape_l" Content="" FontSize="42" Foreground="Purple" Height="67" Width="304" Grid.ColumnSpan="2" Margin="59,9,43.936,1004"/>
+            <Label Name="shape_counter_l" Content="" FontSize="60" Foreground="Red" Margin="47,63,820,795" Grid.ColumnSpan="4"/>
+            <Label Name="done_l" Content="" FontSize="110" Foreground="Green" Width="798" Margin="58,40,969,687" Grid.ColumnSpan="4" />
+            <Label Name="redraw_l" Content="" FontSize="110" Foreground="Red" Width="820" Grid.Column="3" Margin="137,466,415,381" />
+
+            <Canvas Name="canvas" Grid.ColumnSpan="5">
+                <local:DrawingBrush x:Name="brush" Width="177" Height="159" Canvas.Left="30" Canvas.Top="82" />
+                <Polyline Name="trail" Stroke="Red" StrokeThickness="5">
+                    <Polyline.Effect>
+                        <BlurEffect Radius="10" />
+                    </Polyline.Effect>
+                </Polyline>
+
+
+
+            </Canvas>
+        </Grid>
+    </Viewbox>
+</Window>

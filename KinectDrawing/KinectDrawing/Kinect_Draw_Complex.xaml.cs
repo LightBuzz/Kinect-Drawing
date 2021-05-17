@@ -21,11 +21,9 @@ using System.Diagnostics;
 
 namespace KinectDrawing
 {
-    /// <summary>
-    /// Interaction logic for UserEntry.xaml
-    /// </summary>
-    /// 
-    public partial class Kinect_Draw : Window
+
+    
+    public partial class Kinect_Draw_Complex : Window
     {
 
 
@@ -34,7 +32,7 @@ namespace KinectDrawing
         string hand_used;
         int main_counter;
         int user_counter;
-        
+
         const string DATA_PATH = @"C:\Users\khale\OneDrive\Kinect_Data\Data";
         string python_results = "";
         bool left_lasso_gesture_handling;
@@ -48,8 +46,8 @@ namespace KinectDrawing
         private byte[] _pixels = null;
         private WriteableBitmap _bitmap = null;
 
-        
-        public Kinect_Draw(int user_id_passed, string hand_used_passed)
+
+        public Kinect_Draw_Complex(int user_id_passed, string hand_used_passed)
         {
 
             InitializeComponent();
@@ -58,7 +56,7 @@ namespace KinectDrawing
 
             this.user_id = user_id_passed;
             this.hand_used = hand_used_passed;
-            
+
 
             //Console.WriteLine("--------------------------------->id= " + user_id);
             //Console.WriteLine("--------------------------------->id= " + hand_used);
@@ -66,7 +64,7 @@ namespace KinectDrawing
             //Indexing from (1)
             main_counter = 0;
             user_counter = 0;
-            
+
 
 
             _sensor = KinectSensor.GetDefault();
@@ -155,7 +153,7 @@ namespace KinectDrawing
 
             int id_from_folder;
             bool id_found = false;
-            int user_counter;            
+            int user_counter;
             int user_last_counter = -1;
 
             foreach (string f in filePaths)
@@ -185,7 +183,7 @@ namespace KinectDrawing
                 return user_last_counter;
             else
                 return 0;
-           
+
         }
         void run_py_Csharp(string file_path)
         {
@@ -195,7 +193,8 @@ namespace KinectDrawing
             psi.FileName = @"C:\Users\khale\AppData\Local\Programs\Python\Python37\python.exe";
 
             // 2) Provide script and arguments
-            var script = @"C:\Users\khale\Source\Repos\Kinect-Drawing\Python_part\GP_2\Primitive_script.py";
+            var script = @"C:\Users\khale\Source\Repos\Kinect-Drawing\Python_part\GP_2\Complex_script.py";
+            Console.WriteLine("Complex");
             var coord = file_path;
             //var coord = @"C:\Users\khale\OneDrive\Desktop\GP_2\6_1.txt";
 
@@ -231,7 +230,7 @@ namespace KinectDrawing
 
         private void BodyReader_FrameArrived(object sender, BodyFrameArrivedEventArgs e)
         {
-            
+
 
             using (var frame = e.FrameReference.AcquireFrame())
             {
@@ -245,7 +244,7 @@ namespace KinectDrawing
                     {
                         Joint handRight = body.Joints[JointType.HandRight];
                         Joint handLeft = body.Joints[JointType.HandLeft];
-                        
+
 
                         if (body.HandRightState == HandState.Closed || body.HandRightState == HandState.Open)
                         {
@@ -277,10 +276,10 @@ namespace KinectDrawing
                                     //Create a new trail to avoid connecting the last and first points issue
                                     if (body.HandRightState == HandState.Open)
                                     {
-                                        
+
 
                                         Polyline trail2 = generate_new_trail();
-                                        
+
 
                                         //Check if trail is not empty to avoid creating too many empty trials.
                                         if (trail.Points.Count() != 0)
@@ -317,13 +316,13 @@ namespace KinectDrawing
 
                                             Console.WriteLine("-----> " + trails.Count());
                                             Console.WriteLine("+++++> " + empty_trail);
-                                            if (trails.Count() == 2 && empty_trail)
+                                            if (trails.Count() >= 2 && empty_trail)
                                             {
                                                 //the main_counter will increase each time a file is created
 
                                                 main_counter += 1;
                                                 //After 25 Drawings each 5 for one of the 5 shapes the program will print DONE!
-                                                if (main_counter == 25)
+                                                if (main_counter >= 25)
                                                     done_l.Content = "BRAVOO DONE!";
 
                                                 shape_counter_l.Content = "Shape Counter = " + main_counter;
@@ -411,7 +410,7 @@ namespace KinectDrawing
 
                                                         }
 
-                                                        
+
                                                         //Clear After writing into the file
                                                         canvas.Children.Clear();
                                                         brush = generate_new_brush();
@@ -424,8 +423,8 @@ namespace KinectDrawing
 
                                                     //Send the file created to the python Script
                                                     run_py_Csharp(filePath);
-                                                    
-                                                  
+
+
                                                     shape_counter_l.Content = python_results;
 
                                                 }
@@ -435,7 +434,7 @@ namespace KinectDrawing
                                             }
                                             else
                                             {
-                                                
+
                                                 left_lasso_gesture_handling = true;
                                                 //clear 
 
@@ -485,7 +484,7 @@ namespace KinectDrawing
                                     Canvas.SetTop(brush, y - brush.Height);
                                 }
                             }
-                            else if(hand_used == "L")
+                            else if (hand_used == "L")
                             {
 
                                 CameraSpacePoint handLeftPosition = handLeft.Position;
@@ -689,16 +688,15 @@ namespace KinectDrawing
                                     Canvas.SetTop(brush, y - brush.Height);
                                 }
                             }
-                            
+
                         }
                     }
                 }
             }
         }
 
-        
-    }
 
+    }
 
 }
 
