@@ -24,7 +24,7 @@ namespace KinectDrawing
     /// </summary>
     public partial class old_user : Page
     {
-        static string IDs_file_path = @"E:\New folder\e\cs\4th year\graduation project\Kinect_Data\IDs\Main_IDs.txt";
+        static string IDs_file_path = @"C:\Users\khale\OneDrive\Kinect_Data\IDs\Main_IDs.txt";
         public int user_id_old_user = -1;
         string IDs_file_as_a_string = System.IO.File.ReadAllText(IDs_file_path);
         string drawing_hand = "";

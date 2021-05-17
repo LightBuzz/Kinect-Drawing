@@ -29,7 +29,7 @@ namespace KinectDrawing
         public MainWindow()
         {
             ResourceDictionary skin = new ResourceDictionary();
-            skin.Source = new Uri(@"C:\Users\LENOVO\Documents\GitHub\Kinect-Drawing\KinectDrawing\KinectDrawing\whiteblue.xaml", UriKind.Absolute);
+            skin.Source = new Uri(@"C:\Users\khale\Source\Repos\Kinect-Drawing\KinectDrawing\KinectDrawing\whiteblue.xaml", UriKind.Absolute);
             App.Current.Resources.MergedDictionaries.Add(skin);
             InitializeComponent();
         }
