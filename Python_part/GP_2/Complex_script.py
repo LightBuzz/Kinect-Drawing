@@ -186,7 +186,7 @@ def preprocess(img_path): #input an image
     our_test.append(img_data)
 
 
-    our_test_resized = [cv2.resize(our_test[0], (80, 80))]
+    our_test_resized = [cv2.resize(our_test[0], (320, 320))]
 
     ppc = 16
     hog_images = []
@@ -202,7 +202,7 @@ def preprocess(img_path): #input an image
 
 #Test1
 #folder_path  = "C:\\Users\\khale\\Source\\Repos\\Kinect-Drawing\\Python_part\\GP_2"
-filename = os.path.join(folder_path, 'complex_v1_finalized_model.pkl')
+filename = os.path.join(folder_path, 'Complex_v4_finalized_model.pkl')
 loaded_model = pickle.load(open(filename, 'rb'))
 
 
@@ -221,16 +221,18 @@ for class_i in prob_of_classes:
     prob_of_classes_rounded.append(int(round(class_i,2) * 100))
 
 #mapping part 
-if predicted_class[1] == '0' and prob_of_classes_rounded[0] >= 78:
+if predicted_class[1] == '0' and prob_of_classes_rounded[0] >= 0:
+    predicted_class = "Candle"
+elif predicted_class[1] == '1' and prob_of_classes_rounded[1] >= 0:
+    predicted_class = "Beer-Mug"
+elif predicted_class[1] == '2' and prob_of_classes_rounded[2] >= 0:
+    predicted_class = "TV"
+elif predicted_class[1] == '3' and prob_of_classes_rounded[3] >= 0:
+    predicted_class = "axe"
+elif predicted_class[1] == '4' and prob_of_classes_rounded[4] >= 0:
     predicted_class = "House"
-elif predicted_class[1] == '1' and prob_of_classes_rounded[1] >= 90:
-    predicted_class = "Air Plane"
-elif predicted_class[1] == '2' and prob_of_classes_rounded[2] >= 90:
-    predicted_class = "Tree"
-elif predicted_class[1] == '3' and prob_of_classes_rounded[3] >= 90:
-    predicted_class = "Bicycle"
-elif predicted_class[1] == '4' and prob_of_classes_rounded[4] >= 90:
-    predicted_class = "T-shirt"
+elif predicted_class[1] == '5' and prob_of_classes_rounded[5] >= 0:
+    predicted_class = "bowl"
 else:
     predicted_class = "I Don't know!"
 
