@@ -15,5 +15,7 @@ namespace KinectDrawing
     {
         public int data_traveling1 { get; set; }
         public string data_traveling2 { get; set; }
+
+        public string label { get; set; }
     }
 }

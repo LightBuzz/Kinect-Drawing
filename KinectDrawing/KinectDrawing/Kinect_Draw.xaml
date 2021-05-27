@@ -26,7 +26,7 @@
             <Label Name="redraw_l" Content="" FontSize="110" Foreground="Red" Width="820" Grid.Column="3" Margin="137,466,415,381" />
 
             <Canvas Name="canvas" Grid.ColumnSpan="5">
-                <local:DrawingBrush x:Name="brush" Width="177" Height="159" Canvas.Left="30" Canvas.Top="82" />
+                <local:DrawingBrush x:Name="brush" Width="177" Height="159" Canvas.Right="30" Canvas.Top="82" />
                 <Polyline Name="trail" Stroke="Red" StrokeThickness="5">
                     <Polyline.Effect>
                         <BlurEffect Radius="10" />
