@@ -4,6 +4,6 @@
              xmlns:local="clr-namespace:KinectDrawing"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-         
+        <ResourceDictionary Source="whiteblue.xaml"/>
     </Application.Resources>
 </Application>

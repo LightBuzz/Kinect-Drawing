@@ -1,4 +1,4 @@
-# Kinect Drawing
+# Kinect  Drawing
 A simple drawing app using Kinect, C#, and XAML.
 
 This short demo project will show you the following:
@@ -9,7 +9,7 @@ This short demo project will show you the following:
 ## Video
 [Watch on YouTube](https://youtu.be/8fTNLHeUXQg)
 
-## Tutorial
+## Tutorial_  
 [Read a step-by-step tutorial](http://pterneas.com/?p=2244&preview=true)
 
 ## Prerequisites
@@ -45,6 +45,15 @@ Simply download the project and hit "Start" using Visual Studio. This project is
 				trail.Points.Add(new Point { X = x, Y = y });
 			}
 		}
+		
+# The DataSet
+* Check out the DataSet Folder
+* It contains 5 classes (Rectangle, Triangle, Circle, Line, Polygone)
+* Used to train the model for classification
+
+
+# The Training Notebook
+* Used for custome training using the DataSet provided in the repo.
 
 ## Contributors
 * [Vangos Pterneas](http://pterneas.com) from [LightBuzz](http://lightbuzz.com) - Microsoft Kinect MVP

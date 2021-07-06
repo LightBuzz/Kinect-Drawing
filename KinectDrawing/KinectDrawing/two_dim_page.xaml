@@ -1,0 +1,22 @@
+﻿<Page x:Class="KinectDrawing.two_dim_page"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:KinectDrawing"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="two_dim_page">
+
+    <Grid>
+        <TextBlock HorizontalAlignment="Center" Height="90" Margin="125,193,175,0" TextWrapping="Wrap" Text="kinect heros 2d" FontSize="60" FontStyle="Italic" Foreground="Gold" VerticalAlignment="Top" Width="500" TextAlignment="Center" RenderTransformOrigin="0.476,0.511" />
+
+        <Button Name="btn2" Content="primitive shapes" HorizontalAlignment="Left" Margin="100,290,0,0" VerticalAlignment="Top" Width="140" Click="primitive_shapes_fn" RenderTransformOrigin="0.533,0" Height="32" />
+        <Button Name="btn3" Content="sketches" HorizontalAlignment="Center" Margin="335,290,325,0" VerticalAlignment="Top" Width="140" Click="sketches_fn" RenderTransformOrigin="0.533,0" Height="32" />
+        <Button Name="btn4" HorizontalAlignment="Right" Margin="10,290,100,0" VerticalAlignment="Top" Width="140" Click="go_to_help_page"  RenderTransformOrigin="0.533,0" >
+            <Image Source="C:\Users\khale\source\repos\Kinect-Drawing\resources\6363280-help-button-icon-blue-glossy-with-shadow-illustration.jpg" Height="29" Width="240"></Image>
+
+        </Button>
+
+    </Grid>
+</Page>

@@ -5,21 +5,26 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:KinectDrawing"
         mc:Ignorable="d"
-        Title="KINECT Drawing" Height="350" Width="525"
-        WindowState="Maximized"
-        Background="Black"
-        Closing="Window_Closing">
-    <Viewbox>
-        <Grid Width="1920" Height="1080">
-            <Image Name="camera" />
-            <Canvas Name="canvas">
-                <local:DrawingBrush x:Name="brush" Width="300" Height="300" />
-                <Polyline Name="trail" Stroke="Red" StrokeThickness="15">
-                    <Polyline.Effect>
-                        <BlurEffect Radius="20" />
-                    </Polyline.Effect>
-                </Polyline>
-            </Canvas>
-        </Grid>
-    </Viewbox>
+        Title="MainWindow" Height="Auto" Width="Auto" WindowState="Maximized" ResizeMode="NoResize">
+    <Grid RenderTransformOrigin="0.537,0.525">
+        <Button Name="new" Content="new user" HorizontalAlignment="Right" Margin="0,15,34,0" VerticalAlignment="Top" Width="172"  RenderTransformOrigin="-0.333,-7" Click="new_Click" Height="37"/>
+        <Button Name="old" Content="old user" HorizontalAlignment="Left" Margin="34,15,0,0" VerticalAlignment="Top" Width="172" Height="37" Click="old_click"/>
+        <Frame x:Name="Main_f" Source="home_kinect_page.xaml" Navigated="Main_f_Navigated" NavigationUIVisibility="Hidden" HorizontalAlignment="Left" Height="700" Margin="34,97,-91.4,0" VerticalAlignment="Top" Width="1450" RenderTransformOrigin="0.5,0.5">
+       
+            <Frame.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleY="0.426"/>
+                    <RotateTransform/>
+                    <TranslateTransform Y="3.041"/>
+                </TransformGroup>
+            </Frame.RenderTransform>
+        </Frame>
+        <Button x:Name="_new" Content="new user" HorizontalAlignment="Right" Margin="0,15,34,0" VerticalAlignment="Top" Width="172"  RenderTransformOrigin="-0.333,-7" Click="new_Click" Height="37"/>
+        <Button x:Name="old_Copy" Content="old user" HorizontalAlignment="Left" Margin="34,15,0,0" VerticalAlignment="Top" Width="172" Height="37" Click="old_click"/>
+        <Button x:Name="env2" Content="2-dimension" HorizontalAlignment="Left" Margin="235,15,0,0" VerticalAlignment="Top" Width="144" Height="37" Click="two_dim"/>
+        <Button x:Name="env3" Content="3-dimension" HorizontalAlignment="Right" Margin="0,15,224.6,0" VerticalAlignment="Top" Width="126"  RenderTransformOrigin="-0.333,-7" Click="three_dim" Height="37"/>
+
+
+    </Grid>
 </Window>
